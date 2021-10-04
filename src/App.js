@@ -6,6 +6,7 @@ import WhoAreYou from '../src/Components/WhoAreYouForm';
 import Developer from '../src/Components/Developer';
 import ThankYou from '../src/Components/ThankYouForm';
 import DeveloperMainPage from './Components/DeveloperMainPage';
+import DeveloperOverviewPage from './test/DeveloperOverviewPage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,16 +21,16 @@ class App extends React.Component{
   render(){
     return(
       <div className="App">
-      <Router>
+      {/* <Router>
         <Switch>
           <Route path="/" exact component={() => <Login />} />
           <Route path="/Register.js" exact component={() => <Register />} />
         </Switch>
-      </Router>
+      </Router> */}
       {/* <WhoAreYou /> */}
       {/* <Developer /> */}
       {/* <ThankYou /> */}
-      {/* <DeveloperMainPage /> */}
+      <DeveloperOverviewPage />
     </div>
     )
   }

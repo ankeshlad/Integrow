@@ -5,9 +5,8 @@ import logo from '../assets/bg2.jpg';
 const login = () => {
     return(
         <div className = "mainContainer">
-            <img src={logo}/>
+            <img className = "logo-image" src={logo}/>
             <LoginForm />
-       
         </div>
     )
 }
